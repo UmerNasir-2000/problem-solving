@@ -4,7 +4,7 @@
   "description": "This repository is a playground for all problem solving topics",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "tsx watch src/index.ts"
   },
   "keywords": [],
   "author": {
@@ -13,6 +13,7 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "tsx": "^4.10.5",
     "typescript": "^5.4.5"
   }
 }
