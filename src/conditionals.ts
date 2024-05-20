@@ -2,4 +2,8 @@ function isEven(num: number): boolean {
   return num % 2 === 0
 }
 
-export { isEven }
+function isOdd(num: number): boolean {
+  return !isEven(num)
+}
+
+export { isEven, isOdd }
