@@ -6,4 +6,13 @@ function isOdd(num: number): boolean {
   return Number.isInteger(num) && !isEven(num)
 }
 
-export { isEven, isOdd }
+/** If last bit is 1 then number is odd otherwise even. */
+function isOddWithBitwise(num: number): boolean {
+  return !!(num & 1)
+}
+
+function isEvenWithBitwise(num: number): boolean {
+  return !isOddWithBitwise(num)
+}
+
+export { isEven, isOdd, isOddWithBitwise, isEvenWithBitwise }
