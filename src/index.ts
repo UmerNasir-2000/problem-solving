@@ -1,7 +1,7 @@
-import { digitToWord } from "./conditionals"
+import { isConsonant } from "./conditionals"
 
 function main() {
-  console.log(digitToWord(8.6))
+  console.log(isConsonant("      a"))
 }
 
 main()

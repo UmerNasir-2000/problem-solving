@@ -29,9 +29,35 @@ function digitToWord(num: number): string {
     "nine",
   ]
 
-  if (num >= 0 && num <= 9 && Number.isInteger(num)) return words[num]
+  if (Number.isInteger(num) && num >= 0 && num <= 9) return words[num]
 
   return ""
 }
 
-export { isEven, isOdd, isOddWithBitwise, isEvenWithBitwise, digitToWord }
+function isVowel(char: string): boolean {
+  if (!char || char.trim().length > 1) return false
+
+  const vowels: Record<string, boolean> = {
+    a: true,
+    e: true,
+    i: true,
+    o: true,
+    u: true,
+  }
+
+  return !!vowels[char.toLowerCase()]
+}
+
+function isConsonant(char: string): boolean {
+  return /^[a-z]$/i.test(char) && !isVowel(char)
+}
+
+export {
+  isEven,
+  isOdd,
+  isOddWithBitwise,
+  isEvenWithBitwise,
+  digitToWord,
+  isVowel,
+  isConsonant,
+}
