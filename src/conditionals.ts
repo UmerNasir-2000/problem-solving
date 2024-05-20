@@ -15,4 +15,23 @@ function isEvenWithBitwise(num: number): boolean {
   return !isOddWithBitwise(num)
 }
 
-export { isEven, isOdd, isOddWithBitwise, isEvenWithBitwise }
+function digitToWord(num: number): string {
+  const words = [
+    "zero",
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+  ]
+
+  if (num >= 0 && num <= 9 && Number.isInteger(num)) return words[num]
+
+  return ""
+}
+
+export { isEven, isOdd, isOddWithBitwise, isEvenWithBitwise, digitToWord }

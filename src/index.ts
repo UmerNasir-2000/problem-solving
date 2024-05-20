@@ -1,9 +1,7 @@
-import { isEven, isOddWithBitwise, isOdd } from "./conditionals"
+import { digitToWord } from "./conditionals"
 
 function main() {
-  console.log(isEven(45))
-  console.log(isOdd(4.55))
-  console.log(isOddWithBitwise(3))
+  console.log(digitToWord(8.6))
 }
 
 main()
