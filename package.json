@@ -6,7 +6,16 @@
   "scripts": {
     "watch": "tsx watch src/index.ts"
   },
-  "keywords": [],
+  "keywords": [
+    "Typescript",
+    "Problem Solving",
+    "Algorithms",
+    "Data Structures",
+    "Arrays",
+    "Linked List",
+    "Stack",
+    "Hashing"
+  ],
   "author": {
     "name": "M. Umer Nasir",
     "email": "umer.nas@outlook.com"
