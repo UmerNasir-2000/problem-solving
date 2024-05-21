@@ -85,6 +85,16 @@ function fooBarQix(num: number): string {
   return output
 }
 
+function fromAsciiToCharacter(code: number): string {
+  if (code < 0 || code > 127) return ""
+  return String.fromCharCode(code)
+}
+
+function fromCharacterToAscii(char: string): number {
+  if (!char || char.length > 1) return -1
+  return char.charCodeAt(0)
+}
+
 export {
   isEven,
   isOdd,
@@ -95,4 +105,6 @@ export {
   isConsonant,
   isLeapYear,
   fooBarQix,
+  fromAsciiToCharacter,
+  fromCharacterToAscii,
 }
