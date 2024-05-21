@@ -1,7 +1,7 @@
-import { isConsonant } from "./conditionals"
+import { isLeapYear } from "./conditionals"
 
 function main() {
-  console.log(isConsonant("      a"))
+  console.log(isLeapYear(1900))
 }
 
 main()

@@ -51,6 +51,18 @@ function isVowel(char: string): boolean {
 function isConsonant(char: string): boolean {
   return /^[a-z]$/i.test(char) && !isVowel(char)
 }
+/**
+ *  Leap year must satisfy these conditions...
+ * 1. The year is a multiple of 400
+ * 2. The year is a multiple of 4 and not a multiple of 100.
+ * 1900 is not a leap year but 2000 and 2024 are.
+ */
+function isLeapYear(year: number): boolean {
+  if (!Number.isInteger(year)) return false
+
+  if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) return true
+  return false
+}
 
 export {
   isEven,
@@ -60,4 +72,5 @@ export {
   digitToWord,
   isVowel,
   isConsonant,
+  isLeapYear,
 }
