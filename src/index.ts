@@ -1,7 +1,7 @@
-import { isLeapYear } from "./conditionals"
+import { fooBarQix } from "./conditionals"
 
 function main() {
-  console.log(isLeapYear(1900))
+  console.log(fooBarQix(105))
 }
 
 main()
