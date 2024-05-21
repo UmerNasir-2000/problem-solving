@@ -1,7 +1,7 @@
-import { toUpperCase } from "./conditionals"
+import { printEvenSequence } from "./repetitions"
 
 function main() {
-  console.log(toUpperCase("a"))
+  console.log(printEvenSequence(6, 66))
 }
 
 main()
