@@ -1,7 +1,7 @@
-import { fooBarQix } from "./conditionals"
+import { toUpperCase } from "./conditionals"
 
 function main() {
-  console.log(fooBarQix(105))
+  console.log(toUpperCase("a"))
 }
 
 main()

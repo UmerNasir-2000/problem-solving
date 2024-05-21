@@ -95,6 +95,18 @@ function fromCharacterToAscii(char: string): number {
   return char.charCodeAt(0)
 }
 
+/** takes a single character and converts to lower case */
+function toLowerCase(char: string): string {
+  if (char < "A" || char > "Z") return ""
+  return String.fromCharCode(char.charCodeAt(0) + 32)
+}
+
+/** takes a single character and converts to upper case */
+function toUpperCase(char: string): string {
+  if (char < "a" || char > "z") return ""
+  return String.fromCharCode(char.charCodeAt(0) - 32)
+}
+
 export {
   isEven,
   isOdd,
@@ -107,4 +119,6 @@ export {
   fooBarQix,
   fromAsciiToCharacter,
   fromCharacterToAscii,
+  toLowerCase,
+  toUpperCase,
 }
