@@ -1,1 +1,7 @@
-console.log(`Hello, DSA with TS!! 👌👊🧑‍💻✅💪🦄🔖`)
+import { isConsonant } from "./conditionals"
+
+function main() {
+  console.log(isConsonant("      a"))
+}
+
+main()
