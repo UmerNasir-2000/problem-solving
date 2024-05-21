@@ -1,7 +1,7 @@
-import { isConsonant } from "./conditionals"
+import { toUpperCase } from "./conditionals"
 
 function main() {
-  console.log(isConsonant("      a"))
+  console.log(toUpperCase("a"))
 }
 
 main()
