@@ -9,4 +9,17 @@ function printEvenSequence(start: number, end: number): string {
   return output.trim()
 }
 
-export { printEvenSequence }
+function getFactorial(num: number): number {
+  let factorial = 1
+
+  if (num < 0) return -1
+  if (num === 0) return factorial
+
+  for (let i = 1; i <= num; i++) {
+    factorial *= i
+  }
+
+  return factorial
+}
+
+export { printEvenSequence, getFactorial }

@@ -1,7 +1,7 @@
-import { printEvenSequence } from "./repetitions"
+import { getFactorial } from "./repetitions"
 
 function main() {
-  console.log(printEvenSequence(6, 66))
+  console.log(getFactorial(5))
 }
 
 main()
