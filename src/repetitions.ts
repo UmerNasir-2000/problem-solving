@@ -22,4 +22,19 @@ function getFactorial(num: number): number {
   return factorial
 }
 
-export { printEvenSequence, getFactorial }
+/** Multiply two numbers without using * operator */
+function multiply(a: number, b: number): number {
+  if (a == 0 || b == 0) return 0
+
+  let product = a
+  let i = 1
+
+  while (i < b) {
+    product += a
+    i++
+  }
+
+  return product
+}
+
+export { printEvenSequence, getFactorial, multiply }

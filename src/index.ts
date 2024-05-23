@@ -1,7 +1,7 @@
-import { getFactorial } from "./repetitions"
+import { multiply } from "./repetitions"
 
 function main() {
-  console.log(getFactorial(5))
+  console.log(multiply(4, 4))
 }
 
 main()
